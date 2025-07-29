@@ -1,71 +1,178 @@
-# TBWA Enterprise Infrastructure Dashboard
+# TBWA Infrastructure Dashboard 🚀
 
-Real-time monitoring and analytics for TBWA enterprise data platform.
+A comprehensive real-time monitoring system for the Scout data platform with geographic analytics, medallion architecture support, and automated deployment workflows.
 
-## Quick Start
+[![Next.js](https://img.shields.io/badge/Next.js-14-black)](https://nextjs.org/)
+[![Supabase](https://img.shields.io/badge/Supabase-Database-green)](https://supabase.com/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)](https://www.typescriptlang.org/)
+[![PostGIS](https://img.shields.io/badge/PostGIS-Enabled-orange)](https://postgis.net/)
+
+## 🌟 Features
+
+### Infrastructure Monitoring
+- **4-Tab Dashboard**: Overview, Health, Storage, and Schema analytics
+- **Real-time Metrics**: Database size, table counts, schema health
+- **Scout System Status**: Comprehensive monitoring of Scout tables and schemas
+- **Storage Analysis**: Detailed storage usage by schema and table
+
+### Geographic Analytics 🗺️
+- **Philippine Admin-2 Polygons**: Real province boundaries instead of demo squares
+- **Live Data Visualization**: Choropleth maps with actual Scout metrics
+- **Regional Rankings**: Top-performing regions with dot-strip visualization
+- **Smart Store Mapping**: Geometric joins and fuzzy matching for location data
+
+### Medallion Architecture
+- **Bronze → Silver → Gold**: Complete data flow monitoring
+- **Data Quality Metrics**: AI confidence scores and validation stats
+- **Pipeline Health**: Real-time status of data transformations
+- **Automated Refresh**: Scheduled updates via Edge Functions
+
+### Deployment Automation
+- **Edge Functions Auto-Deploy**: File watcher with automatic deployment
+- **Git Integration**: Auto-commit successful deployments
+- **CI/CD Ready**: GitHub Actions workflow included
+- **Deployment Dashboard**: Real-time deployment monitoring
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Node.js 18+
+- Supabase account
+- PostgreSQL with PostGIS extension
+
+### Installation
 
 ```bash
-# Navigate to project directory
-cd "/Users/tbwa/Library/CloudStorage/GoogleDrive-jgtolentino.rn@gmail.com/My Drive/GitHub/GitHub/tbwa-infrastructure-dashboard"
+# Clone the repository
+git clone https://github.com/jgtolentino/tbwa-infrastructure-dashboard.git
+cd tbwa-infrastructure-dashboard
 
 # Install dependencies
 npm install
 
-# Start development server on port 3002
+# Set up environment variables
+cp .env.example .env
+# Edit .env with your Supabase credentials
+
+# Start development server
 npm run dev
 ```
 
-**Dashboard will be available at:** http://localhost:3002
-
-## Environment Setup
-
-1. Copy your Supabase credentials to `.env.local`:
-   ```bash
-   NEXT_PUBLIC_SUPABASE_URL=https://cxzllzyxwpyptfretryc.supabase.co
-   NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key_here
-   SUPABASE_SERVICE_ROLE_KEY=your_service_role_key_here
-   ```
-
-## Features
-
-- **Overview Dashboard**: Real-time metrics across all enterprise domains
-- **Health Monitoring**: RLS, storage, database, and backup status
-- **Storage Analysis**: Bucket-by-bucket breakdown with security status
-- **Schema Performance**: Cross-domain analytics and query performance
-- **Activity Logs**: Real-time operations and system events
-
-## Architecture Integration
-
-- **Schemas**: hr_admin, financial_ops, operations, corporate, creative_insights
-- **MCP Integration**: Connects to your enterprise MCP server configuration
-- **Real-time Updates**: Live monitoring of Supabase enterprise project
-- **Security**: Full RLS policy compliance and audit trails
-
-## Development
+### Deploy Geographic Analytics
 
 ```bash
-# Build for production
-npm run build
-
-# Start production server
-npm run start
-
-# Lint code
-npm run lint
+# Run the deployment script
+./scripts/deploy-geo-analytics.sh
 ```
 
-## Infrastructure Monitoring
+This will:
+1. Apply database migrations
+2. Deploy Edge Functions
+3. Download Philippine boundaries
+4. Set up geographic analytics
 
-The dashboard monitors:
-- 5 enterprise schemas with 45+ tables
-- 12 storage buckets (2.4TB total)
-- 67 RLS policies (98.2% coverage)
-- Real-time activity across all domains
-- Cross-schema performance analytics
+## 📊 Architecture
 
-## Tech Stack
+```
+┌─────────────────────────────────────────────────────────┐
+│                   Frontend (Next.js)                     │
+├─────────────────────────────────────────────────────────┤
+│                    Supabase Edge Functions               │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐  │
+│  │ scout-export │  │geo_choropleth│  │ geo_dotstrip │  │
+│  └──────────────┘  └──────────────┘  └──────────────┘  │
+├─────────────────────────────────────────────────────────┤
+│                  PostgreSQL + PostGIS                    │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐  │
+│  │    Bronze    │→ │    Silver    │→ │     Gold     │  │
+│  └──────────────┘  └──────────────┘  └──────────────┘  │
+└─────────────────────────────────────────────────────────┘
+```
 
-- **Frontend**: Next.js 14, React 18, TypeScript
-- **UI**: Tailwind CSS, Recharts
-- **Backend**: Supabase Enterprise
-- **Monitoring**: Real-time metrics and health checks
+## 🛠️ Configuration
+
+### MCP (Model Context Protocol)
+The project includes MCP configuration for AI-assisted development:
+
+```json
+{
+  "mcpServers": {
+    "supabase": {
+      "command": "npx",
+      "args": ["@supabase/mcp-server-supabase@latest", "--project-ref=YOUR_PROJECT_REF"]
+    }
+  }
+}
+```
+
+### Environment Variables
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key
+SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
+SUPABASE_ACCESS_TOKEN=your_access_token
+SUPABASE_PROJECT_REF=your_project_ref
+```
+
+## 📁 Project Structure
+
+```
+tbwa-infrastructure-dashboard/
+├── src/
+│   ├── app/              # Next.js app router pages
+│   ├── components/       # React components
+│   │   └── geo/         # Geographic analytics components
+│   └── lib/             # Utilities and helpers
+├── supabase/
+│   ├── functions/       # Edge Functions
+│   └── migrations/      # Database migrations
+├── scripts/             # Deployment and automation scripts
+└── public/             # Static assets
+```
+
+## 🔧 Development
+
+### Running Tests
+```bash
+npm test
+```
+
+### Building for Production
+```bash
+npm run build
+```
+
+### Automated Deployment
+```bash
+# Start file watcher for auto-deployment
+./scripts/watch-and-deploy.sh
+
+# Deploy all Edge Functions
+./scripts/deploy-all-functions.sh
+```
+
+## 📚 Documentation
+
+- [Geographic Analytics Setup](./GEOGRAPHIC_ANALYTICS_SETUP.md)
+- [Edge Functions Guide](./README_EDGE_FUNCTIONS.md)
+- [Deployment Guide](./DEPLOYMENT_STATUS.md)
+- [MCP Configuration](./CLAUDE.md)
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is proprietary and confidential to TBWA.
+
+## 🙏 Acknowledgments
+
+- Built with [Next.js](https://nextjs.org/)
+- Powered by [Supabase](https://supabase.com/)
+- Geographic data from [GADM](https://gadm.org/)
+- Icons by [Lucide](https://lucide.dev/)
