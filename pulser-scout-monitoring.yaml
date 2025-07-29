@@ -1,0 +1,114 @@
+# Pulser Configuration for Scout System Monitoring v1.1
+# TBWA Neural Infrastructure - Automated Health Checks
+
+name: scout-system-monitoring
+version: 1.1.0
+description: Automated monitoring and export for Scout Medallion Architecture
+
+# Scheduled Tasks
+tasks:
+  - name: refresh-medallion-status
+    description: Update medallion architecture metrics
+    schedule: "0 */6 * * *"  # Every 6 hours
+    command: |
+      SELECT scout.refresh_medallion_status();
+    type: sql
+    
+  - name: export-system-report
+    description: Generate and store system export
+    schedule: "0 9 * * *"  # Daily at 9 AM
+    command: |
+      curl -X POST https://cxzllzyxwpyptfretryc.supabase.co/functions/v1/scout-system-export?format=json \
+        -H "Authorization: Bearer $SUPABASE_ANON_KEY" \
+        -H "Content-Type: application/json" \
+        > /tmp/scout-export-$(date +%Y%m%d).json
+    type: shell
+    
+  - name: health-check-alert
+    description: Alert if system degrades
+    schedule: "*/30 * * * *"  # Every 30 minutes
+    command: |
+      SELECT 
+        CASE 
+          WHEN system_status != 'OPERATIONAL' THEN 
+            pg_notify('scout_alert', 
+              json_build_object(
+                'status', system_status,
+                'timestamp', NOW(),
+                'medallion_health', medallion_status->>'pipeline_health'
+              )::text
+            )
+        END
+      FROM scout.scout_system_health
+      ORDER BY updated_at DESC
+      LIMIT 1;
+    type: sql
+
+# Export Commands
+commands:
+  - name: export
+    description: Export Scout system status
+    subcommands:
+      - name: json
+        command: |
+          curl -s https://cxzllzyxwpyptfretryc.supabase.co/functions/v1/scout-system-export?format=json
+        
+      - name: html
+        command: |
+          curl -s https://cxzllzyxwpyptfretryc.supabase.co/functions/v1/scout-system-export?format=html > scout-report.html
+          
+      - name: pdf
+        command: |
+          curl -s https://cxzllzyxwpyptfretryc.supabase.co/functions/v1/scout-system-export?format=pdf > scout-report.pdf
+  
+  - name: report
+    description: Generate comprehensive Scout report
+    command: |
+      echo "🔍 Scout System Report - $(date)"
+      echo "================================"
+      
+      # Get medallion stats
+      psql $DATABASE_URL -c "SELECT * FROM scout.get_medallion_architecture_stats();"
+      
+      # Get system health
+      psql $DATABASE_URL -c "SELECT * FROM gold.medallion_dashboard_summary;"
+      
+      # Export to file
+      curl -s https://cxzllzyxwpyptfretryc.supabase.co/functions/v1/scout-system-export?format=json | \
+        jq '.' > scout-report-$(date +%Y%m%d-%H%M%S).json
+      
+      echo "✅ Report saved to scout-report-$(date +%Y%m%d-%H%M%S).json"
+
+# Hooks
+hooks:
+  pre-export:
+    - name: validate-medallion
+      command: SELECT scout.refresh_medallion_status();
+      
+  post-export:
+    - name: log-export
+      command: |
+        INSERT INTO scout.export_history (export_type, export_time, status)
+        VALUES ('system_export', NOW(), 'completed');
+
+# Environment Variables
+env:
+  SUPABASE_URL: https://cxzllzyxwpyptfretryc.supabase.co
+  SUPABASE_ANON_KEY: ${SUPABASE_ANON_KEY}
+  DATABASE_URL: ${DATABASE_URL}
+
+# Monitoring Dashboard Integration
+integrations:
+  - type: webhook
+    name: slack-alerts
+    url: ${SLACK_WEBHOOK_URL}
+    events:
+      - system_degraded
+      - export_failed
+      
+  - type: metrics
+    name: prometheus
+    endpoint: /metrics
+    labels:
+      service: scout-monitoring
+      version: "1.1"

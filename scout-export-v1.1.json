@@ -1,0 +1,529 @@
+{
+  "timestamp": "2025-07-29T01:52:45.192Z",
+  "database_summary": {
+    "total_schemas": 82,
+    "total_tables": 93,
+    "total_size": "52 MB",
+    "scout_tables": 25,
+    "other_schemas": [
+      {
+        "schema_name": "public",
+        "table_count": 35
+      },
+      {
+        "schema_name": "scout",
+        "table_count": 16
+      },
+      {
+        "schema_name": "auth",
+        "table_count": 16
+      },
+      {
+        "schema_name": "realtime",
+        "table_count": 7
+      },
+      {
+        "schema_name": "storage",
+        "table_count": 5
+      },
+      {
+        "schema_name": "gold",
+        "table_count": 3
+      },
+      {
+        "schema_name": "bronze",
+        "table_count": 3
+      },
+      {
+        "schema_name": "silver",
+        "table_count": 3
+      },
+      {
+        "schema_name": "topology",
+        "table_count": 2
+      },
+      {
+        "schema_name": "geo",
+        "table_count": 1
+      },
+      {
+        "schema_name": "supabase_migrations",
+        "table_count": 1
+      },
+      {
+        "schema_name": "vault",
+        "table_count": 1
+      },
+      {
+        "schema_name": "pg_temp_28",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_29",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_3",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_31",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_32",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_33",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_34",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_35",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_36",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_38",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_39",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_40",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_41",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_43",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_46",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_48",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_49",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_5",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_50",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_52",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_55",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_56",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_57",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_6",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_8",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_1",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_14",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_16",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_17",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_18",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_19",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_2",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_21",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_28",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_29",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_3",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_31",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_32",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_33",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_34",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_35",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_36",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_38",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_39",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_40",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_41",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_43",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_46",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_48",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_49",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_5",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_50",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_52",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_55",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_56",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_57",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_8",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pgbouncer",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_6",
+        "table_count": 0
+      },
+      {
+        "schema_name": "extensions",
+        "table_count": 0
+      },
+      {
+        "schema_name": "graphql",
+        "table_count": 0
+      },
+      {
+        "schema_name": "graphql_public",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_1",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_14",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_16",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_17",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_18",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_19",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_2",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_21",
+        "table_count": 0
+      }
+    ]
+  },
+  "scout_status": {
+    "schema_exists": true,
+    "table_count": 19,
+    "tables": [
+      {
+        "row_count": 0,
+        "table_name": "analytics_summary"
+      },
+      {
+        "row_count": 0,
+        "table_name": "brand_insights"
+      },
+      {
+        "row_count": 0,
+        "table_name": "brands"
+      },
+      {
+        "row_count": 0,
+        "table_name": "campaign_performance"
+      },
+      {
+        "row_count": 0,
+        "table_name": "campaign_targets"
+      },
+      {
+        "row_count": 0,
+        "table_name": "campaigns"
+      },
+      {
+        "row_count": 0,
+        "table_name": "competitive_analysis"
+      },
+      {
+        "row_count": 0,
+        "table_name": "master_brands"
+      },
+      {
+        "row_count": 0,
+        "table_name": "master_customers"
+      },
+      {
+        "row_count": 0,
+        "table_name": "master_locations"
+      },
+      {
+        "row_count": 0,
+        "table_name": "master_skus"
+      },
+      {
+        "row_count": 0,
+        "table_name": "master_stores"
+      },
+      {
+        "row_count": 0,
+        "table_name": "municipalities"
+      },
+      {
+        "row_count": 0,
+        "table_name": "scout_customers"
+      },
+      {
+        "row_count": 0,
+        "table_name": "scout_transaction_items"
+      },
+      {
+        "row_count": 0,
+        "table_name": "scout_transactions"
+      },
+      {
+        "row_count": 0,
+        "table_name": "scout_transactions"
+      },
+      {
+        "row_count": 0,
+        "table_name": "stores"
+      },
+      {
+        "row_count": 0,
+        "table_name": "transactions"
+      }
+    ]
+  },
+  "storage_report": {
+    "total_database_size": "52 MB",
+    "scout_schema_size": "4560 kB",
+    "largest_tables": [
+      {
+        "row_count": 0,
+        "table_name": "gold.scout_transactions",
+        "total_size": "13 MB"
+      },
+      {
+        "row_count": 0,
+        "table_name": "public.gadm_boundaries",
+        "total_size": "11 MB"
+      },
+      {
+        "row_count": 0,
+        "table_name": "public.spatial_ref_sys",
+        "total_size": "7144 kB"
+      },
+      {
+        "row_count": 0,
+        "table_name": "public.scout_customers",
+        "total_size": "3048 kB"
+      },
+      {
+        "row_count": 0,
+        "table_name": "bronze.raw_transactions",
+        "total_size": "296 kB"
+      },
+      {
+        "row_count": 0,
+        "table_name": "public.kv_store_bc5932cb",
+        "total_size": "232 kB"
+      },
+      {
+        "row_count": 0,
+        "table_name": "public.scout_transactions",
+        "total_size": "224 kB"
+      },
+      {
+        "row_count": 0,
+        "table_name": "public.kv_store_e0a3193f",
+        "total_size": "208 kB"
+      },
+      {
+        "row_count": 0,
+        "table_name": "public.kv_store_58a5def4",
+        "total_size": "200 kB"
+      },
+      {
+        "row_count": 0,
+        "table_name": "public.scout_transaction_items",
+        "total_size": "200 kB"
+      }
+    ],
+    "storage_by_schema": [
+      {
+        "total_size": "23 MB",
+        "schema_name": "public"
+      },
+      {
+        "total_size": "13 MB",
+        "schema_name": "gold"
+      },
+      {
+        "total_size": "1088 kB",
+        "schema_name": "scout"
+      },
+      {
+        "total_size": "944 kB",
+        "schema_name": "auth"
+      },
+      {
+        "total_size": "408 kB",
+        "schema_name": "bronze"
+      },
+      {
+        "total_size": "248 kB",
+        "schema_name": "silver"
+      },
+      {
+        "total_size": "208 kB",
+        "schema_name": "storage"
+      },
+      {
+        "total_size": "176 kB",
+        "schema_name": "supabase_migrations"
+      },
+      {
+        "total_size": "136 kB",
+        "schema_name": "realtime"
+      },
+      {
+        "total_size": "56 kB",
+        "schema_name": "geo"
+      },
+      {
+        "total_size": "48 kB",
+        "schema_name": "vault"
+      },
+      {
+        "total_size": "48 kB",
+        "schema_name": "topology"
+      }
+    ]
+  },
+  "medallion_architecture": null,
+  "system_health": null
+}

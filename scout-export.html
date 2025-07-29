@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scout Monitoring System Status</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    h1 { color: #333; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+    .status-card { border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0; }
+    .status-good { border-left: 5px solid #4CAF50; }
+    .status-warning { border-left: 5px solid #FF9800; }
+    .status-error { border-left: 5px solid #F44336; }
+    table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    th { background-color: #f2f2f2; }
+    .metric { font-weight: bold; }
+    .value { font-family: monospace; }
+    .footer { margin-top: 40px; font-size: 12px; color: #666; text-align: center; }
+  </style>
+</head>
+<body>
+  <h1>Scout Monitoring System Status</h1>
+  <div class="status-card status-good">
+    <h2>System Status: OPERATIONAL</h2>
+    <p>Report generated: 2025-07-29T01:34:00.779Z</p>
+  </div>
+  
+  <h2>Database Summary</h2>
+  <table>
+    <tr><th>Metric</th><th>Value</th></tr>
+    <tr><td class="metric">Total Schemas</td><td class="value">82</td></tr>
+    <tr><td class="metric">Total Tables</td><td class="value">93</td></tr>
+    <tr><td class="metric">Total Size</td><td class="value">52 MB</td></tr>
+    <tr><td class="metric">Scout Tables</td><td class="value">24</td></tr>
+  </table>
+  
+  <h2>Scout Schema Status</h2>
+  <table>
+    <tr><th>Status</th><th>Table Count</th></tr>
+    <tr>
+      <td>✅ Healthy</td>
+      <td>19 tables</td>
+    </tr>
+  </table>
+  
+  <h2>Storage Report</h2>
+  <table>
+    <tr><th>Metric</th><th>Value</th></tr>
+    <tr><td class="metric">Total Database Size</td><td class="value">52 MB</td></tr>
+    <tr><td class="metric">Scout Schema Size</td><td class="value">4560 kB</td></tr>
+  </table>
+  
+  <h2>Largest Tables</h2>
+  <table>
+    <tr><th>Table Name</th><th>Size</th></tr>
+    <tr><td>gold.scout_transactions</td><td>13 MB</td></tr><tr><td>public.gadm_boundaries</td><td>11 MB</td></tr><tr><td>public.spatial_ref_sys</td><td>7144 kB</td></tr><tr><td>public.scout_customers</td><td>3048 kB</td></tr><tr><td>bronze.raw_transactions</td><td>296 kB</td></tr><tr><td>public.kv_store_bc5932cb</td><td>232 kB</td></tr><tr><td>public.scout_transactions</td><td>224 kB</td></tr><tr><td>public.kv_store_e0a3193f</td><td>208 kB</td></tr><tr><td>public.kv_store_58a5def4</td><td>200 kB</td></tr><tr><td>public.scout_transaction_items</td><td>200 kB</td></tr>
+  </table>
+  
+  <div class="footer">
+    <p>TBWA Scout Monitoring System | Version 1.0 | Confidential</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,1660 @@
+{
+  "timestamp": "2025-07-29T01:33:59.953Z",
+  "database_summary": {
+    "total_schemas": 82,
+    "total_tables": 93,
+    "total_size": "52 MB",
+    "scout_tables": 24,
+    "other_schemas": [
+      {
+        "schema_name": "public",
+        "table_count": 35
+      },
+      {
+        "schema_name": "scout",
+        "table_count": 16
+      },
+      {
+        "schema_name": "auth",
+        "table_count": 16
+      },
+      {
+        "schema_name": "realtime",
+        "table_count": 7
+      },
+      {
+        "schema_name": "storage",
+        "table_count": 5
+      },
+      {
+        "schema_name": "gold",
+        "table_count": 3
+      },
+      {
+        "schema_name": "bronze",
+        "table_count": 3
+      },
+      {
+        "schema_name": "silver",
+        "table_count": 3
+      },
+      {
+        "schema_name": "topology",
+        "table_count": 2
+      },
+      {
+        "schema_name": "geo",
+        "table_count": 1
+      },
+      {
+        "schema_name": "supabase_migrations",
+        "table_count": 1
+      },
+      {
+        "schema_name": "vault",
+        "table_count": 1
+      },
+      {
+        "schema_name": "pg_temp_28",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_29",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_3",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_31",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_32",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_33",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_34",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_35",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_36",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_38",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_39",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_40",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_41",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_43",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_46",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_48",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_49",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_5",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_50",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_52",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_55",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_56",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_57",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_6",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_8",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_1",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_14",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_16",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_17",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_18",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_19",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_2",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_21",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_28",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_29",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_3",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_31",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_32",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_33",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_34",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_35",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_36",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_38",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_39",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_40",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_41",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_43",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_46",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_48",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_49",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_5",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_50",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_52",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_55",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_56",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_57",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_8",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pgbouncer",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_toast_temp_6",
+        "table_count": 0
+      },
+      {
+        "schema_name": "extensions",
+        "table_count": 0
+      },
+      {
+        "schema_name": "graphql",
+        "table_count": 0
+      },
+      {
+        "schema_name": "graphql_public",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_1",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_14",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_16",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_17",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_18",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_19",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_2",
+        "table_count": 0
+      },
+      {
+        "schema_name": "pg_temp_21",
+        "table_count": 0
+      }
+    ]
+  },
+  "scout_status": {
+    "schema_exists": true,
+    "table_count": 19,
+    "tables": [
+      {
+        "row_count": 0,
+        "table_name": "analytics_summary"
+      },
+      {
+        "row_count": 0,
+        "table_name": "brand_insights"
+      },
+      {
+        "row_count": 0,
+        "table_name": "brands"
+      },
+      {
+        "row_count": 0,
+        "table_name": "campaign_performance"
+      },
+      {
+        "row_count": 0,
+        "table_name": "campaign_targets"
+      },
+      {
+        "row_count": 0,
+        "table_name": "campaigns"
+      },
+      {
+        "row_count": 0,
+        "table_name": "competitive_analysis"
+      },
+      {
+        "row_count": 0,
+        "table_name": "master_brands"
+      },
+      {
+        "row_count": 0,
+        "table_name": "master_customers"
+      },
+      {
+        "row_count": 0,
+        "table_name": "master_locations"
+      },
+      {
+        "row_count": 0,
+        "table_name": "master_skus"
+      },
+      {
+        "row_count": 0,
+        "table_name": "master_stores"
+      },
+      {
+        "row_count": 0,
+        "table_name": "municipalities"
+      },
+      {
+        "row_count": 0,
+        "table_name": "scout_customers"
+      },
+      {
+        "row_count": 0,
+        "table_name": "scout_transaction_items"
+      },
+      {
+        "row_count": 0,
+        "table_name": "scout_transactions"
+      },
+      {
+        "row_count": 0,
+        "table_name": "scout_transactions"
+      },
+      {
+        "row_count": 0,
+        "table_name": "stores"
+      },
+      {
+        "row_count": 0,
+        "table_name": "transactions"
+      }
+    ]
+  },
+  "storage_report": {
+    "total_database_size": "52 MB",
+    "scout_schema_size": "4560 kB",
+    "largest_tables": [
+      {
+        "row_count": 0,
+        "table_name": "gold.scout_transactions",
+        "total_size": "13 MB"
+      },
+      {
+        "row_count": 0,
+        "table_name": "public.gadm_boundaries",
+        "total_size": "11 MB"
+      },
+      {
+        "row_count": 0,
+        "table_name": "public.spatial_ref_sys",
+        "total_size": "7144 kB"
+      },
+      {
+        "row_count": 0,
+        "table_name": "public.scout_customers",
+        "total_size": "3048 kB"
+      },
+      {
+        "row_count": 0,
+        "table_name": "bronze.raw_transactions",
+        "total_size": "296 kB"
+      },
+      {
+        "row_count": 0,
+        "table_name": "public.kv_store_bc5932cb",
+        "total_size": "232 kB"
+      },
+      {
+        "row_count": 0,
+        "table_name": "public.scout_transactions",
+        "total_size": "224 kB"
+      },
+      {
+        "row_count": 0,
+        "table_name": "public.kv_store_e0a3193f",
+        "total_size": "208 kB"
+      },
+      {
+        "row_count": 0,
+        "table_name": "public.kv_store_58a5def4",
+        "total_size": "200 kB"
+      },
+      {
+        "row_count": 0,
+        "table_name": "public.scout_transaction_items",
+        "total_size": "200 kB"
+      }
+    ],
+    "storage_by_schema": [
+      {
+        "total_size": "23 MB",
+        "schema_name": "public"
+      },
+      {
+        "total_size": "13 MB",
+        "schema_name": "gold"
+      },
+      {
+        "total_size": "1088 kB",
+        "schema_name": "scout"
+      },
+      {
+        "total_size": "944 kB",
+        "schema_name": "auth"
+      },
+      {
+        "total_size": "408 kB",
+        "schema_name": "bronze"
+      },
+      {
+        "total_size": "248 kB",
+        "schema_name": "silver"
+      },
+      {
+        "total_size": "208 kB",
+        "schema_name": "storage"
+      },
+      {
+        "total_size": "176 kB",
+        "schema_name": "supabase_migrations"
+      },
+      {
+        "total_size": "136 kB",
+        "schema_name": "realtime"
+      },
+      {
+        "total_size": "56 kB",
+        "schema_name": "geo"
+      },
+      {
+        "total_size": "48 kB",
+        "schema_name": "vault"
+      },
+      {
+        "total_size": "48 kB",
+        "schema_name": "topology"
+      }
+    ]
+  },
+  "schema_analysis": {
+    "schema_name": "scout",
+    "tables": [
+      {
+        "row_count": 0,
+        "table_name": "analytics_summary",
+        "column_count": 17
+      },
+      {
+        "row_count": 0,
+        "table_name": "brand_insights",
+        "column_count": 17
+      },
+      {
+        "row_count": 0,
+        "table_name": "brands",
+        "column_count": 11
+      },
+      {
+        "row_count": 0,
+        "table_name": "campaign_performance",
+        "column_count": 14
+      },
+      {
+        "row_count": 0,
+        "table_name": "campaign_targets",
+        "column_count": 12
+      },
+      {
+        "row_count": 0,
+        "table_name": "campaigns",
+        "column_count": 16
+      },
+      {
+        "row_count": 0,
+        "table_name": "competitive_analysis",
+        "column_count": 13
+      },
+      {
+        "row_count": 0,
+        "table_name": "master_brands",
+        "column_count": 12
+      },
+      {
+        "row_count": 0,
+        "table_name": "master_customers",
+        "column_count": 9
+      },
+      {
+        "row_count": 0,
+        "table_name": "master_locations",
+        "column_count": 13
+      },
+      {
+        "row_count": 0,
+        "table_name": "master_skus",
+        "column_count": 11
+      },
+      {
+        "row_count": 0,
+        "table_name": "master_stores",
+        "column_count": 12
+      },
+      {
+        "row_count": 0,
+        "table_name": "municipalities",
+        "column_count": 18
+      },
+      {
+        "row_count": 0,
+        "table_name": "scout_customers",
+        "column_count": 7
+      },
+      {
+        "row_count": 0,
+        "table_name": "scout_transaction_items",
+        "column_count": 9
+      },
+      {
+        "row_count": 0,
+        "table_name": "scout_transactions",
+        "column_count": 28
+      },
+      {
+        "row_count": 0,
+        "table_name": "scout_transactions",
+        "column_count": 7
+      },
+      {
+        "row_count": 0,
+        "table_name": "stores",
+        "column_count": 15
+      },
+      {
+        "row_count": 0,
+        "table_name": "transactions",
+        "column_count": 12
+      }
+    ],
+    "indexes": [
+      {
+        "index_name": "analytics_summary_analysis_date_region_metric_type_key",
+        "table_name": "analytics_summary"
+      },
+      {
+        "index_name": "analytics_summary_pkey",
+        "table_name": "analytics_summary"
+      },
+      {
+        "index_name": "brand_insights_brand_id_measurement_date_key",
+        "table_name": "brand_insights"
+      },
+      {
+        "index_name": "brand_insights_pkey",
+        "table_name": "brand_insights"
+      },
+      {
+        "index_name": "brands_brand_code_key",
+        "table_name": "brands"
+      },
+      {
+        "index_name": "brands_pkey",
+        "table_name": "brands"
+      },
+      {
+        "index_name": "campaign_performance_campaign_id_municipality_id_performanc_key",
+        "table_name": "campaign_performance"
+      },
+      {
+        "index_name": "campaign_performance_pkey",
+        "table_name": "campaign_performance"
+      },
+      {
+        "index_name": "campaign_targets_pkey",
+        "table_name": "campaign_targets"
+      },
+      {
+        "index_name": "campaigns_campaign_code_key",
+        "table_name": "campaigns"
+      },
+      {
+        "index_name": "campaigns_pkey",
+        "table_name": "campaigns"
+      },
+      {
+        "index_name": "competitive_analysis_pkey",
+        "table_name": "competitive_analysis"
+      },
+      {
+        "index_name": "idx_master_brands_tbwa",
+        "table_name": "master_brands"
+      },
+      {
+        "index_name": "idx_master_skus_brand",
+        "table_name": "master_skus"
+      },
+      {
+        "index_name": "idx_master_stores_location",
+        "table_name": "master_stores"
+      },
+      {
+        "index_name": "idx_master_stores_type",
+        "table_name": "master_stores"
+      },
+      {
+        "index_name": "idx_scout_brand_insights_brand",
+        "table_name": "brand_insights"
+      },
+      {
+        "index_name": "idx_scout_brand_insights_category",
+        "table_name": "brand_insights"
+      },
+      {
+        "index_name": "idx_scout_brand_insights_date",
+        "table_name": "brand_insights"
+      },
+      {
+        "index_name": "idx_scout_brand_insights_position",
+        "table_name": "brand_insights"
+      },
+      {
+        "index_name": "idx_scout_brands_category",
+        "table_name": "brands"
+      },
+      {
+        "index_name": "idx_scout_brands_status",
+        "table_name": "brands"
+      },
+      {
+        "index_name": "idx_scout_brands_tier",
+        "table_name": "brands"
+      },
+      {
+        "index_name": "idx_scout_campaign_performance_campaign",
+        "table_name": "campaign_performance"
+      },
+      {
+        "index_name": "idx_scout_campaign_performance_composite",
+        "table_name": "campaign_performance"
+      },
+      {
+        "index_name": "idx_scout_campaign_performance_date",
+        "table_name": "campaign_performance"
+      },
+      {
+        "index_name": "idx_scout_campaign_performance_municipality",
+        "table_name": "campaign_performance"
+      },
+      {
+        "index_name": "idx_scout_campaign_targets_active",
+        "table_name": "campaign_targets"
+      },
+      {
+        "index_name": "idx_scout_campaign_targets_campaign",
+        "table_name": "campaign_targets"
+      },
+      {
+        "index_name": "idx_scout_campaign_targets_type",
+        "table_name": "campaign_targets"
+      },
+      {
+        "index_name": "idx_scout_campaigns_brand",
+        "table_name": "campaigns"
+      },
+      {
+        "index_name": "idx_scout_campaigns_code",
+        "table_name": "campaigns"
+      },
+      {
+        "index_name": "idx_scout_campaigns_dates",
+        "table_name": "campaigns"
+      },
+      {
+        "index_name": "idx_scout_campaigns_status",
+        "table_name": "campaigns"
+      },
+      {
+        "index_name": "idx_scout_campaigns_type",
+        "table_name": "campaigns"
+      },
+      {
+        "index_name": "idx_scout_competitive_analysis_competitor",
+        "table_name": "competitive_analysis"
+      },
+      {
+        "index_name": "idx_scout_competitive_analysis_metric",
+        "table_name": "competitive_analysis"
+      },
+      {
+        "index_name": "idx_scout_competitive_analysis_our_brand",
+        "table_name": "competitive_analysis"
+      },
+      {
+        "index_name": "idx_scout_competitive_analysis_period",
+        "table_name": "competitive_analysis"
+      },
+      {
+        "index_name": "idx_scout_municipalities_active",
+        "table_name": "municipalities"
+      },
+      {
+        "index_name": "idx_scout_municipalities_class",
+        "table_name": "municipalities"
+      },
+      {
+        "index_name": "idx_scout_municipalities_coordinates",
+        "table_name": "municipalities"
+      },
+      {
+        "index_name": "idx_scout_municipalities_geom",
+        "table_name": "municipalities"
+      },
+      {
+        "index_name": "idx_scout_municipalities_province",
+        "table_name": "municipalities"
+      },
+      {
+        "index_name": "idx_scout_municipalities_region",
+        "table_name": "municipalities"
+      },
+      {
+        "index_name": "idx_scout_municipalities_urban_rural",
+        "table_name": "municipalities"
+      },
+      {
+        "index_name": "idx_scout_stores_city",
+        "table_name": "stores"
+      },
+      {
+        "index_name": "idx_scout_stores_region",
+        "table_name": "stores"
+      },
+      {
+        "index_name": "idx_scout_stores_status",
+        "table_name": "stores"
+      },
+      {
+        "index_name": "idx_scout_trans_date_360",
+        "table_name": "scout_transactions"
+      },
+      {
+        "index_name": "idx_scout_transactions_amount",
+        "table_name": "transactions"
+      },
+      {
+        "index_name": "idx_scout_transactions_brand_name",
+        "table_name": "scout_transactions"
+      },
+      {
+        "index_name": "idx_scout_transactions_brand_timestamp",
+        "table_name": "transactions"
+      },
+      {
+        "index_name": "idx_scout_transactions_combo_basket",
+        "table_name": "scout_transactions"
+      },
+      {
+        "index_name": "idx_scout_transactions_customer",
+        "table_name": "transactions"
+      },
+      {
+        "index_name": "idx_scout_transactions_is_tbwa",
+        "table_name": "scout_transactions"
+      },
+      {
+        "index_name": "idx_scout_transactions_store_id",
+        "table_name": "scout_transactions"
+      },
+      {
+        "index_name": "idx_scout_transactions_store_timestamp",
+        "table_name": "transactions"
+      },
+      {
+        "index_name": "idx_scout_transactions_timestamp",
+        "table_name": "transactions"
+      },
+      {
+        "index_name": "idx_scout_transactions_type",
+        "table_name": "transactions"
+      },
+      {
+        "index_name": "master_brands_brand_code_key",
+        "table_name": "master_brands"
+      },
+      {
+        "index_name": "master_brands_pkey",
+        "table_name": "master_brands"
+      },
+      {
+        "index_name": "master_customers_pkey",
+        "table_name": "master_customers"
+      },
+      {
+        "index_name": "master_locations_pkey",
+        "table_name": "master_locations"
+      },
+      {
+        "index_name": "master_skus_pkey",
+        "table_name": "master_skus"
+      },
+      {
+        "index_name": "master_skus_sku_code_key",
+        "table_name": "master_skus"
+      },
+      {
+        "index_name": "master_stores_pkey",
+        "table_name": "master_stores"
+      },
+      {
+        "index_name": "municipalities_municipality_code_key",
+        "table_name": "municipalities"
+      },
+      {
+        "index_name": "municipalities_pkey",
+        "table_name": "municipalities"
+      },
+      {
+        "index_name": "scout_customers_pkey",
+        "table_name": "scout_customers"
+      },
+      {
+        "index_name": "scout_transaction_items_pkey",
+        "table_name": "scout_transaction_items"
+      },
+      {
+        "index_name": "scout_transactions_pkey",
+        "table_name": "scout_transactions"
+      },
+      {
+        "index_name": "scout_transactions_pkey",
+        "table_name": "scout_transactions"
+      },
+      {
+        "index_name": "stores_pkey",
+        "table_name": "stores"
+      },
+      {
+        "index_name": "stores_store_code_key",
+        "table_name": "stores"
+      },
+      {
+        "index_name": "transactions_pkey",
+        "table_name": "transactions"
+      }
+    ],
+    "constraints": [
+      {
+        "table_name": "analytics_summary",
+        "constraint_name": "34755_41280_1_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "analytics_summary",
+        "constraint_name": "34755_41280_2_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "analytics_summary",
+        "constraint_name": "34755_41280_4_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "analytics_summary",
+        "constraint_name": "analytics_summary_analysis_date_region_metric_type_key",
+        "constraint_type": "UNIQUE"
+      },
+      {
+        "table_name": "analytics_summary",
+        "constraint_name": "analytics_summary_pkey",
+        "constraint_type": "PRIMARY KEY"
+      },
+      {
+        "table_name": "brand_insights",
+        "constraint_name": "34755_41458_14_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "brand_insights",
+        "constraint_name": "34755_41458_1_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "brand_insights",
+        "constraint_name": "34755_41458_3_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "brand_insights",
+        "constraint_name": "brand_insights_brand_id_measurement_date_key",
+        "constraint_type": "UNIQUE"
+      },
+      {
+        "table_name": "brand_insights",
+        "constraint_name": "brand_insights_competitive_position_check",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "brand_insights",
+        "constraint_name": "brand_insights_pkey",
+        "constraint_type": "PRIMARY KEY"
+      },
+      {
+        "table_name": "brands",
+        "constraint_name": "34755_41042_1_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "brands",
+        "constraint_name": "34755_41042_2_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "brands",
+        "constraint_name": "34755_41042_3_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "brands",
+        "constraint_name": "34755_41042_4_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "brands",
+        "constraint_name": "brands_brand_code_key",
+        "constraint_type": "UNIQUE"
+      },
+      {
+        "table_name": "brands",
+        "constraint_name": "brands_brand_tier_check",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "brands",
+        "constraint_name": "brands_pkey",
+        "constraint_type": "PRIMARY KEY"
+      },
+      {
+        "table_name": "brands",
+        "constraint_name": "brands_status_check",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "campaign_performance",
+        "constraint_name": "34755_41429_1_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "campaign_performance",
+        "constraint_name": "34755_41429_4_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "campaign_performance",
+        "constraint_name": "campaign_performance_campaign_id_fkey",
+        "constraint_type": "FOREIGN KEY"
+      },
+      {
+        "table_name": "campaign_performance",
+        "constraint_name": "campaign_performance_campaign_id_municipality_id_performanc_key",
+        "constraint_type": "UNIQUE"
+      },
+      {
+        "table_name": "campaign_performance",
+        "constraint_name": "campaign_performance_municipality_id_fkey",
+        "constraint_type": "FOREIGN KEY"
+      },
+      {
+        "table_name": "campaign_performance",
+        "constraint_name": "campaign_performance_pkey",
+        "constraint_type": "PRIMARY KEY"
+      },
+      {
+        "table_name": "campaign_targets",
+        "constraint_name": "34755_41471_1_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "campaign_targets",
+        "constraint_name": "34755_41471_4_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "campaign_targets",
+        "constraint_name": "campaign_targets_campaign_id_fkey",
+        "constraint_type": "FOREIGN KEY"
+      },
+      {
+        "table_name": "campaign_targets",
+        "constraint_name": "campaign_targets_pkey",
+        "constraint_type": "PRIMARY KEY"
+      },
+      {
+        "table_name": "campaign_targets",
+        "constraint_name": "campaign_targets_priority_level_check",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "campaign_targets",
+        "constraint_name": "campaign_targets_target_type_check",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "campaigns",
+        "constraint_name": "34755_41398_1_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "campaigns",
+        "constraint_name": "34755_41398_2_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "campaigns",
+        "constraint_name": "34755_41398_3_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "campaigns",
+        "constraint_name": "34755_41398_7_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "campaigns",
+        "constraint_name": "campaigns_campaign_code_key",
+        "constraint_type": "UNIQUE"
+      },
+      {
+        "table_name": "campaigns",
+        "constraint_name": "campaigns_campaign_type_check",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "campaigns",
+        "constraint_name": "campaigns_pkey",
+        "constraint_type": "PRIMARY KEY"
+      },
+      {
+        "table_name": "campaigns",
+        "constraint_name": "campaigns_status_check",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "competitive_analysis",
+        "constraint_name": "34755_41491_1_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "competitive_analysis",
+        "constraint_name": "34755_41491_2_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "competitive_analysis",
+        "constraint_name": "34755_41491_3_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "competitive_analysis",
+        "constraint_name": "34755_41491_4_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "competitive_analysis",
+        "constraint_name": "34755_41491_8_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "competitive_analysis",
+        "constraint_name": "competitive_analysis_pkey",
+        "constraint_type": "PRIMARY KEY"
+      },
+      {
+        "table_name": "master_brands",
+        "constraint_name": "34755_41158_1_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "master_brands",
+        "constraint_name": "34755_41158_2_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "master_brands",
+        "constraint_name": "34755_41158_3_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "master_brands",
+        "constraint_name": "34755_41158_4_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "master_brands",
+        "constraint_name": "34755_41158_5_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "master_brands",
+        "constraint_name": "master_brands_brand_code_key",
+        "constraint_type": "UNIQUE"
+      },
+      {
+        "table_name": "master_brands",
+        "constraint_name": "master_brands_market_segment_check",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "master_brands",
+        "constraint_name": "master_brands_pkey",
+        "constraint_type": "PRIMARY KEY"
+      },
+      {
+        "table_name": "master_customers",
+        "constraint_name": "34755_41212_1_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "master_customers",
+        "constraint_name": "master_customers_age_bracket_check",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "master_customers",
+        "constraint_name": "master_customers_customer_type_check",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "master_customers",
+        "constraint_name": "master_customers_economic_class_check",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "master_customers",
+        "constraint_name": "master_customers_gender_check",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "master_customers",
+        "constraint_name": "master_customers_pkey",
+        "constraint_type": "PRIMARY KEY"
+      },
+      {
+        "table_name": "master_locations",
+        "constraint_name": "34755_41145_1_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "master_locations",
+        "constraint_name": "34755_41145_2_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "master_locations",
+        "constraint_name": "34755_41145_3_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "master_locations",
+        "constraint_name": "34755_41145_4_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "master_locations",
+        "constraint_name": "34755_41145_5_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "master_locations",
+        "constraint_name": "34755_41145_6_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "master_locations",
+        "constraint_name": "master_locations_economic_profile_check",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "master_locations",
+        "constraint_name": "master_locations_pkey",
+        "constraint_type": "PRIMARY KEY"
+      },
+      {
+        "table_name": "master_locations",
+        "constraint_name": "master_locations_urbanization_level_check",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "master_skus",
+        "constraint_name": "34755_41174_1_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "master_skus",
+        "constraint_name": "34755_41174_2_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "master_skus",
+        "constraint_name": "34755_41174_3_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "master_skus",
+        "constraint_name": "34755_41174_5_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "master_skus",
+        "constraint_name": "master_skus_brand_id_fkey",
+        "constraint_type": "FOREIGN KEY"
+      },
+      {
+        "table_name": "master_skus",
+        "constraint_name": "master_skus_pkey",
+        "constraint_type": "PRIMARY KEY"
+      },
+      {
+        "table_name": "master_skus",
+        "constraint_name": "master_skus_sku_code_key",
+        "constraint_type": "UNIQUE"
+      },
+      {
+        "table_name": "master_stores",
+        "constraint_name": "34755_41192_1_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "master_stores",
+        "constraint_name": "34755_41192_2_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "master_stores",
+        "constraint_name": "34755_41192_4_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "master_stores",
+        "constraint_name": "master_stores_location_id_fkey",
+        "constraint_type": "FOREIGN KEY"
+      },
+      {
+        "table_name": "master_stores",
+        "constraint_name": "master_stores_performance_score_check",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "master_stores",
+        "constraint_name": "master_stores_pkey",
+        "constraint_type": "PRIMARY KEY"
+      },
+      {
+        "table_name": "master_stores",
+        "constraint_name": "master_stores_store_type_check",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "municipalities",
+        "constraint_name": "34755_41414_1_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "municipalities",
+        "constraint_name": "34755_41414_2_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "municipalities",
+        "constraint_name": "34755_41414_3_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "municipalities",
+        "constraint_name": "34755_41414_4_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "municipalities",
+        "constraint_name": "34755_41414_5_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "municipalities",
+        "constraint_name": "34755_41414_6_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "municipalities",
+        "constraint_name": "34755_41414_7_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "municipalities",
+        "constraint_name": "municipalities_income_classification_check",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "municipalities",
+        "constraint_name": "municipalities_municipality_code_key",
+        "constraint_type": "UNIQUE"
+      },
+      {
+        "table_name": "municipalities",
+        "constraint_name": "municipalities_pkey",
+        "constraint_type": "PRIMARY KEY"
+      },
+      {
+        "table_name": "municipalities",
+        "constraint_name": "municipalities_urban_rural_check",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "scout_customers",
+        "constraint_name": "2200_34600_1_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "scout_customers",
+        "constraint_name": "scout_customers_pkey",
+        "constraint_type": "PRIMARY KEY"
+      },
+      {
+        "table_name": "scout_transaction_items",
+        "constraint_name": "2200_34628_1_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "scout_transaction_items",
+        "constraint_name": "2200_34628_6_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "scout_transaction_items",
+        "constraint_name": "2200_34628_7_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "scout_transaction_items",
+        "constraint_name": "scout_transaction_items_brand_id_fkey",
+        "constraint_type": "FOREIGN KEY"
+      },
+      {
+        "table_name": "scout_transaction_items",
+        "constraint_name": "scout_transaction_items_category_id_fkey",
+        "constraint_type": "FOREIGN KEY"
+      },
+      {
+        "table_name": "scout_transaction_items",
+        "constraint_name": "scout_transaction_items_pkey",
+        "constraint_type": "PRIMARY KEY"
+      },
+      {
+        "table_name": "scout_transaction_items",
+        "constraint_name": "scout_transaction_items_transaction_id_fkey",
+        "constraint_type": "FOREIGN KEY"
+      },
+      {
+        "table_name": "scout_transactions",
+        "constraint_name": "2200_34609_1_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "scout_transactions",
+        "constraint_name": "2200_34609_4_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "scout_transactions",
+        "constraint_name": "2200_34609_5_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "scout_transactions",
+        "constraint_name": "34755_41225_10_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "scout_transactions",
+        "constraint_name": "34755_41225_11_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "scout_transactions",
+        "constraint_name": "34755_41225_12_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "scout_transactions",
+        "constraint_name": "34755_41225_1_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "scout_transactions",
+        "constraint_name": "34755_41225_23_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "scout_transactions",
+        "constraint_name": "34755_41225_4_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "scout_transactions",
+        "constraint_name": "34755_41225_6_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "scout_transactions",
+        "constraint_name": "34755_41225_7_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "scout_transactions",
+        "constraint_name": "34755_41225_8_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "scout_transactions",
+        "constraint_name": "34755_41225_9_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "scout_transactions",
+        "constraint_name": "scout_transactions_age_bracket_check",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "scout_transactions",
+        "constraint_name": "scout_transactions_customer_id_fkey",
+        "constraint_type": "FOREIGN KEY"
+      },
+      {
+        "table_name": "scout_transactions",
+        "constraint_name": "scout_transactions_customer_id_fkey",
+        "constraint_type": "FOREIGN KEY"
+      },
+      {
+        "table_name": "scout_transactions",
+        "constraint_name": "scout_transactions_customer_type_check",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "scout_transactions",
+        "constraint_name": "scout_transactions_economic_class_check",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "scout_transactions",
+        "constraint_name": "scout_transactions_gender_check",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "scout_transactions",
+        "constraint_name": "scout_transactions_handshake_score_check",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "scout_transactions",
+        "constraint_name": "scout_transactions_payment_method_check",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "scout_transactions",
+        "constraint_name": "scout_transactions_pkey",
+        "constraint_type": "PRIMARY KEY"
+      },
+      {
+        "table_name": "scout_transactions",
+        "constraint_name": "scout_transactions_pkey",
+        "constraint_type": "PRIMARY KEY"
+      },
+      {
+        "table_name": "scout_transactions",
+        "constraint_name": "scout_transactions_request_mode_check",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "scout_transactions",
+        "constraint_name": "scout_transactions_request_type_check",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "scout_transactions",
+        "constraint_name": "scout_transactions_store_id_fkey",
+        "constraint_type": "FOREIGN KEY"
+      },
+      {
+        "table_name": "scout_transactions",
+        "constraint_name": "scout_transactions_store_id_fkey",
+        "constraint_type": "FOREIGN KEY"
+      },
+      {
+        "table_name": "scout_transactions",
+        "constraint_name": "scout_transactions_store_type_check",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "scout_transactions",
+        "constraint_name": "scout_transactions_time_of_day_check",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "stores",
+        "constraint_name": "34755_41025_1_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "stores",
+        "constraint_name": "34755_41025_2_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "stores",
+        "constraint_name": "34755_41025_3_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "stores",
+        "constraint_name": "34755_41025_4_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "stores",
+        "constraint_name": "stores_pkey",
+        "constraint_type": "PRIMARY KEY"
+      },
+      {
+        "table_name": "stores",
+        "constraint_name": "stores_status_check",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "stores",
+        "constraint_name": "stores_store_code_key",
+        "constraint_type": "UNIQUE"
+      },
+      {
+        "table_name": "transactions",
+        "constraint_name": "34755_41012_1_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "transactions",
+        "constraint_name": "34755_41012_2_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "transactions",
+        "constraint_name": "34755_41012_3_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "transactions",
+        "constraint_name": "34755_41012_4_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "transactions",
+        "constraint_name": "34755_41012_5_not_null",
+        "constraint_type": "CHECK"
+      },
+      {
+        "table_name": "transactions",
+        "constraint_name": "transactions_pkey",
+        "constraint_type": "PRIMARY KEY"
+      },
+      {
+        "table_name": "transactions",
+        "constraint_name": "transactions_transaction_type_check",
+        "constraint_type": "CHECK"
+      }
+    ]
+  }
+}
